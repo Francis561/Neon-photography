@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Special Elite', cursive;
+    
+    
+}
+/*background-area occupyingthe website */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(#768aff, #6a0dad);
+    color: #fff;
+    position: relative;
+}
+/* image logo */
+.logo{
+    margin-top: 10px;
+    margin-left: 7%;
+    height: 90px;
+    cursor: pointer;
+}
+/* contents inside background */
+.content{
+    max-width: 600px;
+    margin-left: 15%;
+    margin-top: 10%;
+    position: relative;
+}
+/* h1 header occupied by the contents */
+.content h1{
+    font-size: 70px;
+    margin: 10px 0;
+    font-weight: 100;
+}
+/* h2 header occupied in the content area */
+.content h2{
+    font-size: 70px;
+    margin: 10px 0;
+    font-weight: 100;
+    opacity: 0.5;
+}
+/* p tag in content area */
+.content p{
+    font-size: 20px;
+    margin: 18px 0;
+    color: #ccc;
+    line-height: 20px;
+    word-spacing: 5px;
+}
+/* styling the link tag */
+.link{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 0;
+    position: relative;
+}
+/* line after the discover more link */
+.link::after{
+    content: '';
+    background: #fff;
+    height: 1px;
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translateY(-50%);
+    transition: 0.5s;   
+}
+/* hover effect on line */
+.link:hover::after{
+    width: 100px;
+}
+span{
+    position: absolute;
+    top: 200px;
+    left: -150px;
+    transform: rotate(-90deg);
+    letter-spacing: 2px;
+    opacity: 0.6;
+}
+span::after{
+    content: '';
+    background: #fff;
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translateY(-50%);
+}
+/* image-styling */
+.featured-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    max-width: 680px;
+}
+/* search icon-styling */
+.search-img{
+    cursor: pointer;
+    position: absolute;
+    left: 9%;
+    bottom: 8%;
+    width: 21px;
+    opacity: 0.5;
+
+
+}
+
